@@ -7,14 +7,35 @@
         url('../fonts/roboto-slab/roboto-slab.ttf') format('truetype'),
 }
 
-*{
+:root {
+    --gradiant-color: linear-gradient(-45deg, #ff48a5, #ff77bc, #ffaed7);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     font-family: "Roboto Slab", serif;
+    background: var(--gradiant-color);
+    background-size: 400% 400%;
+    animation: bg 15s ease infinite;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
