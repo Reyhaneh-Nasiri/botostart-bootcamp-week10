@@ -11,8 +11,20 @@
     --gradiant-color: linear-gradient(-45deg, #ff48a5, #ff77bc, #ffaed7);
     --active-color: #ff48a5;
     --active-color-lg: #fff;
+    --switch-theme-btn: #000;
+    --switch-theme-btn-hover: #ff48a5;
     --main-color: #000;
     --bg-color: #fff;
+}
+
+body.dark-mode {
+    --gradiant-color: linear-gradient(-45deg, #111111, #333333, #555555, #777777);
+    --active-color: #000;
+    --active-color-lg: #000;
+    --switch-theme-btn: #fff;
+    --switch-theme-btn-hover: #000;
+    --main-color: #fff;
+    --bg-color: #777;
 }
 
 * {
@@ -45,10 +57,10 @@ body {
     }
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }

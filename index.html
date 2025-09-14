@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>week 10</title>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/switchMode.css">
     <link rel="stylesheet" href="./assets/css/all.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -19,6 +22,12 @@
                     <span class="bar"></span>
                 </button>
                 <ul class="navbar-menu">
+                    <li class="switch-mode">
+                        <button type="button">
+                            <i class="fa-solid fa-moon dark-mode"></i>
+                            <i class="fa-solid fa-sun light-mode"></i>
+                        </button>
+                    </li>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -30,5 +39,7 @@
     </header>
 
     <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/switchMode.js"></script>
 </body>
+
 </html>
