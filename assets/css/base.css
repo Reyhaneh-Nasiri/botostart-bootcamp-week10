@@ -9,6 +9,10 @@
 
 :root {
     --gradiant-color: linear-gradient(-45deg, #ff48a5, #ff77bc, #ffaed7);
+    --active-color: #ff48a5;
+    --active-color-lg: #fff;
+    --main-color: #000;
+    --bg-color: #fff;
 }
 
 * {
@@ -24,6 +28,7 @@ body {
     background: var(--gradiant-color);
     background-size: 400% 400%;
     animation: bg 15s ease infinite;
+    overflow: hidden;
 }
 
 @keyframes bg {
@@ -38,4 +43,12 @@ body {
     100% {
         background-position: 0 50%;
     }
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
