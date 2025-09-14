@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/roboto-slab/roboto-slab.eot');
+    src: url('../fonts/roboto-slab/roboto-slab.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-slab/roboto-slab.woff2') format('woff2'),
+        url('../fonts/roboto-slab/roboto-slab.woff') format('woff'),
+        url('../fonts/roboto-slab/roboto-slab.ttf') format('truetype'),
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Roboto Slab", serif;
+}
