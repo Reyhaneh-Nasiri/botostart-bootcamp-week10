@@ -33,3 +33,12 @@ body.dark-mode .switch-mode i.light-mode {
 .switch-mode i:hover {
     color: var(--switch-theme-btn-hover);
 }
+
+@media (min-width: 768px) {
+    .switch-mode{
+        position: unset;
+    }
+    .switch-mode i:hover {
+    color: var(--switch-theme-btn-hover-lg);
+}
+}

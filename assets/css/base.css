@@ -13,6 +13,7 @@
     --active-color-lg: #fff;
     --switch-theme-btn: #000;
     --switch-theme-btn-hover: #ff48a5;
+    --switch-theme-btn-hover-lg: #fff;
     --main-color: #000;
     --bg-color: #fff;
 }
@@ -23,6 +24,7 @@ body.dark-mode {
     --active-color-lg: #000;
     --switch-theme-btn: #fff;
     --switch-theme-btn-hover: #000;
+    --switch-theme-btn-hover-lg: #000;
     --main-color: #fff;
     --bg-color: #777;
 }
