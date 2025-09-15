@@ -104,10 +104,6 @@
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        height: 80px;
-    }
-
     .navbar-container {
         padding: 0 2rem;
     }
