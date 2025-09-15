@@ -14,8 +14,16 @@
     --switch-theme-btn: #000;
     --switch-theme-btn-hover: #ff48a5;
     --switch-theme-btn-hover-lg: #fff;
+    --outline-color: #ff48a5;
+    --progress-bg: #ff48a5;
     --main-color: #000;
     --bg-color: #fff;
+    --form-bg: #fff;
+    --button-bg: #ff77bc;
+    --shadow-color: rgba(255, 119, 187, 0.4);
+    --step-color: #ffdfef;
+    --submit-button: #333;
+
 }
 
 body.dark-mode {
@@ -25,8 +33,15 @@ body.dark-mode {
     --switch-theme-btn: #fff;
     --switch-theme-btn-hover: #000;
     --switch-theme-btn-hover-lg: #000;
+    --outline-color: #555;
+    --progress-bg: #555;
     --main-color: #fff;
     --bg-color: #777;
+    --form-bg: #fff;
+    --button-bg: #555;
+    --shadow-color: rgba(85, 85, 85, 0.4);
+    --step-color: #ddd;
+    --submit-button: #333;
 }
 
 * {
@@ -65,4 +80,14 @@ a {
 
 ul {
     list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
 }

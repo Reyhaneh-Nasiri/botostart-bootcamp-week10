@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/switchMode.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/progress.css">
     <link rel="stylesheet" href="./assets/css/all.css">
 </head>
 
@@ -37,9 +39,81 @@
             </div>
         </nav>
     </header>
+    <main>
+
+        <form class="form">
+
+            <div class="progress-container">
+                <div class="progress"></div>
+                <ol>
+                    <li class="current">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ol>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <h3>Personal Information</h3>
+                    <div class="form-control">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>Contact Information</h3>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>Account Information</h3>
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>About</h3>
+                    <div class="form-control">
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" id="bio" rows="4" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button type="button" class="prev-btn">Prev</button>
+                <button type="button" class="next-btn">Next</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+
+        </form>
+
+    </main>
 
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/switchMode.js"></script>
+    <!-- <script src="./assets/js/progress.js"></script> -->
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>

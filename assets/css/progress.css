@@ -1,0 +1,106 @@
+.progress-container {
+    width: 100%;
+    position: relative;
+}
+
+.progress-container::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--step-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.progress-container .progress {
+    height: 4px;
+    width: 100%;
+    background-color: var(--progress-bg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 2;
+    transform: scaleX(0%);
+    transform-origin: left;
+    transition: .3s;
+}
+
+.progress-container ol {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: auto;
+}
+
+.progress-container li {
+    background-color: var(--step-color);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-content: center;
+    font-size: 14px;
+    border-radius: 50%;
+    color: #fff;
+    transition: .3s linear .3s;
+    cursor: pointer;
+}
+
+.progress-container li:where(.done, .current) {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.progress-container li.done {
+    background-color: var(--button-bg);
+}
+
+.progress-container li.current {
+    background-color: var(--button-bg);
+    box-shadow: 0 0 0 4px var(--shadow-color);
+}
+
+.steps-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.step {
+    flex: 1 0 100%;
+    padding: 24px 8px;
+    opacity: 0;
+    transition: all .3s;
+    transition: opacity .3s;
+    height: fit-content;
+    display: grid;
+    gap: 8px;
+}
+
+.step.current {
+    opacity: 1;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+    padding-inline: 8px;
+}
+
+.controls button {
+    flex: 1;
+    border-radius: 16px;
+    padding: 8px 16px;
+    background-color: var(--button-bg);
+    color: #fff;
+    font-size: 14px;
+    transition: .3s;
+    outline-color: #333;
+}
