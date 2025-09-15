@@ -104,3 +104,20 @@
     transition: .3s;
     outline-color: #333;
 }
+
+@media (min-width: 768px) {
+    .progress-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .progress-container li {
+        font-size: 18px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .controls button {
+        font-size: 18px;
+    }
+}
