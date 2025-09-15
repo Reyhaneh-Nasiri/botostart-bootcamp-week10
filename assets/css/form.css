@@ -1,7 +1,7 @@
 .form {
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: calc(50% + 60px);
     transform: translate(-50%, -50%);
     background-color: var(--form-bg);
     padding: 24px;
