@@ -1,3 +1,5 @@
+import { getFromLocalStorage, saveToLocalStorage } from "./helpers/storage.js";
+
   const form = document.querySelector(".form");
   const progress = form.querySelector(".progress");
   const stepsContainer = form.querySelector(".steps-container");
@@ -7,7 +9,7 @@
   const nextButton = form.querySelector(".next-btn");
   const submitButton = form.querySelector(".submit-btn");
 
-  let currentStep = +localStorage.getItem("step") || 0;
+  let currentStep = +getFromLocalStorage("step") || 0;
 
   stepIndicators.forEach((stepIndicator) => {
     stepIndicator.addEventListener("click", (e) => {
@@ -28,7 +30,7 @@
       step.style.transform = `translateX(-${currentStep * 100}%)`;
       step.classList.toggle("current", currentStep === index);
     });
-    localStorage.setItem("step", currentStep);
+    saveToLocalStorage("step", currentStep);
     updateButtons();
   };
 

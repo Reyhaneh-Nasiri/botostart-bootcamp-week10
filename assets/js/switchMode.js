@@ -1,18 +1,21 @@
+import { getFromLocalStorage, saveToLocalStorage } from "./helpers/storage.js";
+import { getSystemTheme } from "./helpers/theme.js";
+
 const body = document.body;
 const switchModeBtn = document.querySelector(".switch-mode");
 
 if (
-  !localStorage.getItem("theme") &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches
+  !getFromLocalStorage("theme") &&
+  getSystemTheme()
 ) {
   body.classList.add("dark-mode");
-  localStorage.setItem("theme", "dark");
+  saveToLocalStorage("theme", "dark");
 } else if (
-  !localStorage.getItem("theme") &&
-  !window.matchMedia("(prefers-color-scheme: dark)").matches
+  !getFromLocalStorage("theme")  &&
+  !getSystemTheme()
 ) {
   body.classList.remove("dark-mode");
-  localStorage.setItem("theme", "light");
+  saveToLocalStorage("theme", "light");
 }
 
 if (localStorage.getItem("theme") === "dark") {
@@ -22,8 +25,8 @@ if (localStorage.getItem("theme") === "dark") {
 const themeHandler = () => {
   body.classList.toggle("dark-mode");
   body.classList.contains("dark-mode")
-    ? localStorage.setItem("theme", "dark")
-    : localStorage.setItem("theme", "light");
+    ? saveToLocalStorage("theme", "dark")
+    : saveToLocalStorage("theme", "light");
 };
 
 switchModeBtn.addEventListener("click", themeHandler);
