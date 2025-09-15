@@ -23,7 +23,6 @@
     --shadow-color: rgba(255, 119, 187, 0.4);
     --step-color: #ffdfef;
     --submit-button: #333;
-
 }
 
 body.dark-mode {
@@ -37,11 +36,11 @@ body.dark-mode {
     --progress-bg: #555;
     --main-color: #fff;
     --bg-color: #777;
-    --form-bg: #fff;
+    --form-bg: "#fff";
     --button-bg: #555;
     --shadow-color: rgba(85, 85, 85, 0.4);
     --step-color: #ddd;
-    --submit-button: #333;
+    --submit-button: "#333";
 }
 
 * {
